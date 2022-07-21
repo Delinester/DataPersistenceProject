@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         System.Text.StringBuilder outData = new System.Text.StringBuilder(data.Length);
         for (int i = 0; i < data.Length; i++)
         {
-            outData.Append((char)strData[i] ^ 145);
+            outData.Append((char)(strData[i] ^ 145));
         }
         return outData.ToString();
     }
